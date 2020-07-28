@@ -125,5 +125,6 @@ function(input, output, session){
   
   onStop(function() {
     RSQLite::dbDisconnect(db_con)
+    stopApp()
   })
 }
