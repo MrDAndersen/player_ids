@@ -5,7 +5,7 @@ library(RSQLite)
 library(dbplyr)
 library(DT)
 
-# Helper function
+# Helper function to find missing IDs
 id_missing <- function(x)(is.na(x) | x == "")
 
 # Create table

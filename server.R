@@ -1,5 +1,4 @@
 function(input, output, session){
- 
   table_updated <- reactiveVal(FALSE)
   
   output$id_table <- DT::renderDataTable({
