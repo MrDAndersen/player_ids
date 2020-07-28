@@ -122,4 +122,8 @@ function(input, output, session){
         bind_rows(inactive_ids) %>% arrange(id) %>% write_csv(con, na = "")
     }
   )
+  
+  onStop(function() {
+    RSQLite::dbDisconnect(db_con)
+  })
 }
