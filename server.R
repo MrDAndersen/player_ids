@@ -25,7 +25,7 @@ function(input, output, session){
     
     # Display data
     data %>% 
-      mutate(player = paste0("<a href = '#' class = 'dbplayer' id = '", id, "'>", player, ", ", team, " ", position, "</a>")) %>% 
+      mutate(player = paste0("<a href = '#' class = 'dbplayer' id = '", id, "'><i class='fa fa-pencil'></i></a>&ensp;", player, ", ", team, " ", position, "</a>")) %>% 
       select(-id, -team, -position) %>% 
       
       DT::datatable(

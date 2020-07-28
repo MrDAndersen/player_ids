@@ -1,4 +1,5 @@
 fluidPage(
+  tags$head(tags$title('Manage Player IDs'), tags$style("a.dbplayer {color: steelblue;} a.dbplayer:hover {color: darkblue}")),
   shinyjs::useShinyjs(),
   # Header
   fluidRow(column(12, span("Manage Player IDs"), style = "background-color: darkblue; color: white; font-size:130%; font-weight: bold; text-align: center")),
